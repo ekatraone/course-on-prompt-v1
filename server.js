@@ -18,7 +18,7 @@ const webApp = express();
 webApp.use(express.json());
 webApp.use(cors());
 
-MONGO_URL = `mongodb+srv://${process.env.MONGOUSER}:${process.env.MONGOPASSWORD}@cluster0.m3gwy.mongodb.net/?retryWrites=true&w=majority`
+MONGO_URL = `mongodb+srv://${process.env.MONGOUSER}:${process.env.MONGOPASSWORD}@cop-one.fe2npes.mongodb.net/?retryWrites=true&w=majority`
 
 mongoose.connect(MONGO_URL)
     .then((x) => {
