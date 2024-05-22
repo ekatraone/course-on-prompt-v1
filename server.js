@@ -128,6 +128,14 @@ webApp.get("/ping", async (req, res) => {
     res.send("ok")
 })
 
+webApp.get("/", async (req, res) => {
+    res.send("Working fine");
+})
+
+webApp.get("/health", aysnc(req, res) =>{
+    res.send(200);
+})
+
 webApp.listen(process.env.PORT, () => {
     console.log(`Server is up and running at 1001`);
 });
