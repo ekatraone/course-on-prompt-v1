@@ -136,6 +136,6 @@ webApp.get("/health", aysnc(req, res) =>{
     res.send(200);
 })
 
-webApp.listen(process.env.PORT, () => {
-    console.log(`Server is up and running at 1001`);
+webApp.listen(process.env.PORT, '0.0.0.0', () => {
+    console.log(`Server is running on http://0.0.0.0:${port}`);
 });
