@@ -132,10 +132,12 @@ webApp.get("/", async (req, res) => {
     res.send("Working fine");
 })
 
-webApp.get("/health", aysnc(req, res) =>{
+webApp.get("/health", async(req, res) =>{
     res.send(200);
 })
 
-webApp.listen(process.env.PORT, '0.0.0.0', () => {
+var port = 8080;
+
+webApp.listen(port, '0.0.0.0', () => {
     console.log(`Server is running on http://0.0.0.0:${port}`);
 });
